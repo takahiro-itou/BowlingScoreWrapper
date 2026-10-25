@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+  <ItemGroup>
+    <ClInclude Include="..\Wrapper\PreCompile.h" />
+    <ClInclude Include="..\Wrapper\resource.h" />
+    <ClInclude Include="..\Wrapper\Wrapper.h" />
+
+    <ClInclude Include="..\Wrapper\Common\BowlingTypes.h" />
+    <ClInclude Include="..\Wrapper\Common\DocumentFile.h" />
+    <ClInclude Include="..\Wrapper\Common\ScoreDocument.h" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="..\Wrapper\AssemblyInfo.cpp" />
+    <ClCompile Include="..\Wrapper\PreCompile.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Wrapper\Wrapper.cpp" />
+
+    <ClCompile Include="..\Wrapper\Common\DocumentFile.cpp" />
+    <ClCompile Include="..\Wrapper\Common\ScoreDocument.cpp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Text Include="..\Wrapper\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Wrapper\app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Wrapper\app.ico" />
+  </ItemGroup>
+
+</Project>
