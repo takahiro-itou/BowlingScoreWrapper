@@ -13,9 +13,6 @@
 
   <ItemGroup>
     <ClCompile Include="..\Wrapper\AssemblyInfo.cpp" />
-    <ClCompile Include="..\Wrapper\PreCompile.cpp">
-      <PrecompiledHeader>Create</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="..\Wrapper\Wrapper.cpp" />
 
     <ClCompile Include="..\Wrapper\Common\DocumentFile.cpp" />
