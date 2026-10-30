@@ -71,17 +71,7 @@
   <Import Project="..\Props\BuildOptions.props" />
   -->
 
-  <ItemDefinitionGroup>
-    <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>PreCompile.h</PrecompiledHeaderFile>
-    </ClCompile>
-    <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-  </ItemDefinitionGroup>
+  <Import Project="$(MSBuildThisFileDirectory)Props\PreCompile.props" />
 
   <ItemGroup>
     <ClInclude Include="..\Wrapper\resource.h" />
@@ -95,9 +85,6 @@
 
   <ItemGroup>
     <ClCompile Include="..\Wrapper\AssemblyInfo.cpp" />
-    <ClCompile Include="..\Wrapper\PreCompile.cpp">
-      <PrecompiledHeader>Create</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="..\Wrapper\Wrapper.cpp" />
 
     <ClCompile Include="..\Wrapper\Common\DocumentFile.cpp" />
